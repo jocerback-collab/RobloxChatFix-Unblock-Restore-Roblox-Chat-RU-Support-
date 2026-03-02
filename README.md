@@ -1,97 +1,199 @@
-💬 RobloxChatFix
-Restore & Fix Roblox Chat Connectivity
-<p align="center"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzEkeqV2dkyL1347T4YDLZgQ9fw-XDEcyqlw&s" width="700"> </p> <p align="center"> <img src="https://img.shields.io/badge/Platform-Windows-blue"> <img src="https://img.shields.io/badge/Region-RU%20Support-red"> <img src="https://img.shields.io/badge/Status-Active-success"> <img src="https://img.shields.io/badge/License-Educational-lightgrey"> </p>
-🚀 About
+<div align="center">
 
-RobloxChatFix is a lightweight tool designed to restore chat functionality in Roblox for users experiencing connection issues or regional restrictions.
+# <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=28 /> <a href="https://github.com/Flowseal/">Flowseal</a><a href="https://github.com/Flowseal/zapret-discord-youtube">/zapret-discord-youtube</a> <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=28 />
 
-Built for simplicity, speed, and stability — especially for users in Russia and other affected regions.
+Альтернатива https://github.com/bol-van/zapret-win-bundle  
+Также вы можете материально поддержать оригинального разработчика zapret [тут](https://github.com/bol-van/zapret?tab=readme-ov-file#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
+</div>
 
-✨ Features
+> [!CAUTION]
+>
+> ### ФЕЙКИ
+> Я не веду никакие другие страницы/группы в телеграм/ютуб каналы  
+> Если вы наткнулись на что-то вне этой страницы гитхаба, что распространяется от моего лица - **ФЕЙК**.
 
-✔ Fixes common chat connection problems
-✔ Helps restore chat access in restricted regions
-✔ Simple and clean interface
-✔ Fast setup (under 1 minute)
-✔ Lightweight and optimized
-✔ Safe design (no modification of Roblox servers)
+> [!WARNING]
+>
+> ### АНТИВИРУСЫ
+> WinDivert может вызвать реакцию антивируса.
+> WinDivert - это инструмент для перехвата и фильтрации трафика, необходимый для работы zapret.
+> Замена iptables и NFQUEUE в Linux, которых нет под Windows.
+> Он может использоваться как хорошими, так и плохими программами, но сам по себе не является вирусом.
+> Драйвер WinDivert64.sys подписан для возможности загрузки в 64-битное ядро Windows.
+>
+> **Выдержка из [`readme.md`](https://github.com/bol-van/zapret-win-bundle/blob/master/readme.md#%D0%B0%D0%BD%D1%82%D0%B8%D0%B2%D0%B8%D1%80%D1%83%D1%81%D1%8B) репозитория [bol-van/zapret-win-bundle](https://github.com/bol-van/zapret-win-bundle)*
+>
+> Некоторые антивирусы склонны относить файлы WinDivert к классам повышенного риска или хакерским инструментам. Происходит удаление файла и помещение его в карантин. При этом детект обязательно имеет название `WinDivert` или `Not-a-virus:RiskTool.Multi.WinDivert`
+>
+> В случае проблем с антивирусом добавьте папку с запретом в исключения, либо отключите детектирование PUA (потенциально нежелательных приложений). Например, в касперском есть галочка "Обнаруживать легальные приложения, которые злоумышленники часто используют для нанесения вреда". При аккуратной и правильной настройке исключений - рекомендуется настроить исключение, но если вы не до конца понимаете что делаете - рекомендуется отключить детект PUA.
 
-🖼 Preview
-<p align="center"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzEkeqV2dkyL1347T4YDLZgQ9fw-XDEcyqlw&s" width="600"><br> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzEkeqV2dkyL1347T4YDLZgQ9fw-XDEcyqlw&s" width="600"> </p>
-📥 Installation Guide
-Step 1 — Download
+> [!IMPORTANT]
+> Все бинарные файлы в папке [`bin`](./bin) взяты из [zapret-win-bundle/zapret-winws](https://github.com/bol-van/zapret-win-bundle/tree/master/zapret-winws). Вы можете это проверить с помощью хэшей/контрольных сумм. Проверяйте, что запускаете, используя сборки из интернета!
 
-Go to the Releases section.
+## ⚙️Использование
 
-Download the latest version.
+1. Включите Secure DNS
+    * В Chrome - "Использовать безопасный DNS", и выбрать поставщика услуг DNS (выбрать вариант, отличный от поставщика по умолчанию)
+    * В Firefox - "Включить DNS через HTTPS, используя: Максимальную защиту", затем "Выбрать поставщика" и вписать URL поставщика вручную, например можно использовать `https://dns.google/dns-query` (т.к. поставщик Cloudflare может быть заблокирован)
+    * В Windows 11 поддерживается включение Secure DNS прямо в настройках ОС - [инструкция тут](https://www.howtogeek.com/765940/how-to-enable-dns-over-https-on-windows-11/). Рекомендуется, если вы пользуетесь Windows 11
 
-Extract the archive.
+2. Скачайте архив (zip/rar) со [страницы последнего релиза](https://github.com/Flowseal/zapret-discord-youtube/releases/latest)
 
-Step 2 — Run
+3. Зайдите в свойства скачанного архива и поставьте галочку "Разблокировать". Если вы используете архиватор 7-Zip или PeaZip, этот шаг можно пропустить
 
-Right-click the file.
+4. Распакуйте содержимое архива по пути, который не содержит кириллицу/спец. символы
 
-Select Run as Administrator.
+5. Запустите нужный файл
 
-Wait for initialization.
+## ℹ️Краткие описания файлов
 
-Step 3 — Fix Chat
+- [**`general.bat ...`**](./general.bat) - запуск стратегии вручную
 
-Open Roblox.
+  Запуск вручную можно использовать для проверки работоспособности стратегий. Работоспособность той или иной стратегии зависит от многих факторов. **Пробуйте разные стратегии (ALT, FAKE и другие), пока не найдёте рабочее для вас решение**
 
-Join any experience.
+- [**`service.bat`**](./service.bat) - установка в автозапуск и другие функции:
+  - <ins>**`Install Service`** - установка любой стратегии в автозапуск (services.msc)</ins>
+  - **`Remove Services`** - удаление стратегии и WinDivert из служб
+  - **`Check Status`** - проверка статуса обхода и служб (стратегии на автозапуске и WinDivert)
+  - **`Game Filter`** - переключение режима обхода для игр (и других сервисов, использующих UDP и TCP на портах выше 1023).  
+  **После переключения требуется перезапуск стратегии.**  
+  В скобках указан текущий статус (включено/выключено).
+  - **`IPSet Filter`** - переключение режима обхода сервисов из `ipset-all.txt`.  
+  Полезно при тестировании, если не работает ресурс, который без zapret работает  
+  В скобках указан текущий статус:
+    - `none` - никакие айпи не попадают под проверку
+    - `loaded` - айпи проверяется на вхождение в список
+    - `any` - любой айпи попадает под фильтр  
+  - **`Auto-Update Check`** - Вкл/Выкл автоматическую проверку на обновления
+  - **`Update IPSet List`** - обновление списка `ipset-all.txt` актуальным из репозитория
+  - **`Update Hosts File`** - обновление файла hosts <ins>**для починки веб версии телеграма и подключения к голосовому чату Discord**</ins>
+  - **`Check for Updates`** - проверка на обновления
+  - **`Run Diagnostics`** - диагностика на распространённые причины, по которым zapret может не работать.  
+  В конце можно очистить кэш <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=11 /> `Discord`, что может помочь, если он неожиданно перестал работать
+  - **`Run Tests`** - запуск утилиты для проверки стратегий на работоспособность:
+    - `Standard tests` - проверка сайтов из `utils/targets.txt`
+    - `DPI checkers` - проверка DPI на различных провайдерах (Cloudflare, Amazon и др.)
 
-Test chat functionality.
 
-Chat should now be restored.
+## ☑️Распространенные вопросы и проблемы
 
-⚙ How It Works
+### После запуска скрипта `general*` ничего не происходит
 
-RobloxChatFix optimizes your connection routing and resolves common networking conflicts that may prevent chat from working correctly in certain regions.
+- После запуска стратегии (отдельным bat файлом, не через service), должен открыться winws.exe (обход), который можно увидеть в панели задач.  
+Если этого не произошло, то см. [#522](https://github.com/Flowseal/zapret-discord-youtube/issues/522)
 
-It does not:
+### Не работает телеграм (веб версия) или бесконечное "подключение" к голосовому чату Discord
+Запустите **`service.bat`**, выберите пункт **`Update hosts file`**. После чего, если ваш hosts будет неактуальным, то Вам будет предложено обновить его самостоятельно:  
+  - Скопируйте весь текст из открывшегося блокнота
+  - Откройте файл `hosts` в появившейся папке с помощью текстового редактора, открытого от имени администратора
+  - Добавьте в конец файла `hosts` то, что скопировали (или замените, если до этого Вы уже добавляли подобное)
+  - Сохраните и перепроверьте подключение. Если не работает - убедитесь, что файл `hosts` действительно сохранился.
 
-Modify Roblox files
+### Обход не работает / перестал работать
 
-Interfere with Roblox servers
+> [!IMPORTANT]
+> **Стратегии со временем могут переставать работать.**
+> Определенная стратегия может работать какое-то время, но со временем она может переставать работать из-за обнаружения.
+> В репозитории представлены множество различных стратегий для обхода. Если ни одна из них вам не помогает, то вам необходимо создать новую, взяв за основу одну из представленных здесь и изменив её параметры.
+> Информацию про параметры стратегий вы можете найти [тут](https://github.com/bol-van/zapret/blob/master/docs/readme.md#nfqws).
 
-Bypass official security systems
+- Проверьте, чтобы не было ошибок в `service.bat` -> `Run Diagnostics`
 
-🌍 Supported Regions
+- Убедитесь, что адрес ресурса записан в списках доменов или IP
 
-🇷🇺 Russia
+- Проверьте другие стратегии (**`ALT`**/**`FAKE`** и другие)
 
-🇪🇺 Europe
+- Попробуйте полную переустановку (см. раздел ниже)
 
-🌎 Global (where applicable)
+- См. [#765](https://github.com/Flowseal/zapret-discord-youtube/issues/765)
 
-❗ Disclaimer
+### Как переустановить/обновить полностью?
+- Сохраните ресурсы/данные, которые вы сами добавляли
+- Перезапустите устройство
+- `service.bat` -> `Remove Services`
+- `service.bat` -> `Run Diagnostics` (если есть ошибки - устраните их) -> в конце Y
+- Удалите папку с запретом
+- Скачайте последнюю версию [со страницы релизов](https://github.com/Flowseal/zapret-discord-youtube/releases) (`zapret-discord-youtube-...`)
+- Нажмите пкм по архиву -> свойства. Если снизу справа есть галочка разблокировать, то нажмите на неё -> применить -> ОК
+- Распакуйте в новую папку в корне диска (без спец. символов и пробелов)
+- Далее пробуйте запускать различные `general` скрипты (стратегии). Проверьте доступность интернет ресурсов - если не работают, то закрывайте программу (в панели задач иконка замочка) и пробуйте другую стратегию
+- Как найдёте рабочую стратегию, можете поставить её на автозапуск: `service.bat` -> `Install Service` -> выбираете нужную
 
-This project is created for educational and testing purposes only.
+### Не работает игра/приложение с включённым запретом
 
-We are not affiliated with Roblox Corporation.
-All trademarks belong to their respective owners.
+- Проверьте, что в service.bat `Game Filter` **`disabled`**, а `IPSet Filter` **`none`**. Иначе это может затронуть доступность ресурсов, которых вы не ожидали.
 
-🛠 Troubleshooting
-Chat still not working?
+### Античит ругается на WinDivert
 
-Restart Roblox
+- Прочитайте инструкцию тут - https://github.com/bol-van/zapret-win-bundle/tree/master/windivert-hide
 
-Restart your PC
+### Требуется цифровая подпись драйвера WinDivert (Windows 7)
 
-Disable conflicting VPN software
+- Замените файлы `WinDivert.dll` и `WinDivert64.sys` в папке [`bin`](./bin) на одноименные из [zapret-win-bundle/win7](https://github.com/bol-van/zapret-win-bundle/tree/master/win7)
 
-Make sure your firewall is not blocking the tool
+### При удалении с помощью [**`service.bat`**](./service.bat), WinDivert остается в службах
 
-❤️ Contributing
+1. Узнайте название службы с помощью команды, в командной строке Windows (Win+R, `cmd`):
 
-Pull requests are welcome.
-If you want to improve the project, feel free to fork and submit changes.
+```cmd
+driverquery | find "Divert"
+```
 
-⭐ Support
+2. Остановите и удалите службу командами:
 
-If this project helped you:
+```cmd
+sc stop название_из_первого_шага
 
-👉 Star the repository
-👉 Share with friends
-👉 Report issues if found
+sc delete название_из_первого_шага
+```
+
+### Не работает <img src="https://cdn-icons-png.flaticon.com/128/1384/1384060.png" height=18 /> YouTube
+
+- Убедитесь что вы настроили Secure DNS.
+- Отключите блокировщик рекламы, известно что YouTube начал с ними бороться.
+- Пробуйте все другие стратегии (если раньше работало, но перестало).
+- См. также [#251](https://github.com/Flowseal/zapret-discord-youtube/discussions/251)
+
+### Не работает <img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" height=18 /> Discord
+
+- Желательно сначала узнать, на какой стратегии открывается сайт YouTube. Запустите эту стратегию.
+- Проверьте Discord в браузере: https://discord.com/app. В браузере работает? Если работает, то можете пользоваться в нём.
+- Если Discord и в браузере не работает, убедитесь что вы настроили Secure DNS, и после этого ещё раз пробуйте все стратегии. Бывает такое, что на одной стратегии YouTube работает, а Discord нет.
+- См. также [#252](https://github.com/Flowseal/zapret-discord-youtube/discussions/252)
+
+### Не нашли своей проблемы
+
+* Создайте её [тут](https://github.com/Flowseal/zapret-discord-youtube/issues)
+
+## 🗒️Добавление адресов прочих ресурсов
+
+Список адресов для обхода можно расширить, добавляя их в:
+- **`list-general-user.txt`** для доменов (поддомены автоматически учитываются)
+- **`list-exclude-user.txt`** для исключения доменов (например, если айпи сети указан в `ipset-all.txt`, но конкретный домен из этой сети не надо фильтровать)
+- **`ipset-all.txt`** для IP и подсетей
+- **`ipset-exclude-user.txt`** для исключения IP и подсетей
+  - Файлы **`*-user.txt`** автоматически создадутся при первом запуске `zapret` или `service.bat`
+
+## ⭐Поддержка проекта
+
+Вы можете поддержать проект, поставив :star: этому репозиторию (сверху справа этой страницы)
+
+Также вы можете материально поддержать оригинального разработчика zapret [тут](https://github.com/bol-van/zapret?tab=readme-ov-file#%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82%D1%8C-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA%D0%B0)
+
+<a href="https://star-history.com/#Flowseal/zapret-discord-youtube&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Flowseal/zapret-discord-youtube&type=Date" />
+ </picture>
+</a>
+
+## ⚖️Лицензирование
+
+Проект распространяется на условиях лицензии [MIT](https://github.com/Flowseal/zapret-discord-youtube/blob/main/LICENSE.txt)
+
+## 🩷Благодарность участникам проекта
+
+[![Contributors](https://contrib.rocks/image?repo=Flowseal/zapret-discord-youtube)](https://github.com/Flowseal/zapret-discord-youtube/graphs/contributors)
+
+💖 Отдельная благодарность разработчику [zapret](https://github.com/bol-van/zapret) - [bol-van](https://github.com/bol-van)
