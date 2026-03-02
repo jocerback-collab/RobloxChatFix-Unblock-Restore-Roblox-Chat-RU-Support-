@@ -1,6 +1,6 @@
 💬 RobloxChatFix
 Restore & Fix Roblox Chat Connectivity
-<p align="center"> <img src="[https://your-image-link-here/banner.png](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwglQ5_CupHZXpbuN_jUM8hOB4RAquQQ36rA&s)" width="700"> </p> <p align="center"> <img src="https://img.shields.io/badge/Platform-Windows-blue"> <img src="https://img.shields.io/badge/Region-RU%20Support-red"> <img src="https://img.shields.io/badge/Status-Active-success"> <img src="https://img.shields.io/badge/License-Educational-lightgrey"> </p>
+<p align="center"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwglQ5_CupHZXpbuN_jUM8hOB4RAquQQ36rA&s" width="700"> </p> <p align="center"> <img src="https://img.shields.io/badge/Platform-Windows-blue"> <img src="https://img.shields.io/badge/Region-RU%20Support-red"> <img src="https://img.shields.io/badge/Status-Active-success"> <img src="https://img.shields.io/badge/License-Educational-lightgrey"> </p>
 🚀 About
 
 RobloxChatFix is a lightweight tool designed to restore chat functionality in Roblox for users experiencing connection issues or regional restrictions.
